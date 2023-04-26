@@ -1,0 +1,105 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@layer components {
+    body {
+        font-family: 'Epilogue', sans-serif;
+        @apply
+        bg-[#F2F2F2]
+    }
+.slp-container {
+    @apply
+    w-[375px]
+    md:w-[689px]
+    lg:w-[1110px]
+    mx-auto
+}
+
+.headingXl {
+    @apply
+    text-[72px]
+    leading-[78px]
+    -tracking-[1px]
+}
+
+.headingXl span {
+    @apply
+    font-bold
+}
+
+.headingLg {
+    @apply
+    text-5xl
+    leading-[56px]
+    -tracking-[.5]
+    font-normal
+}
+
+.headingLg span {
+    @apply
+    font-bold
+}
+
+.headingMd {
+    @apply
+    text-5xl
+    leading-[56px]
+    -tracking-[.5]
+    font-bold
+}
+
+.headingSm {
+    @apply
+    text-base
+    leading-[26px]
+    -tracking-[2.5]
+    font-bold
+}
+
+.quote {
+    @apply
+    text-[20px]
+    leading-[35px]
+}
+
+.body {
+    @apply
+    text-lg
+    leading-8
+}
+
+.footer {
+    @apply
+    text-[15px]
+    leading-[32px]
+}
+
+.primary_btn {
+    @apply
+    py-[15px]
+    px-[32px]
+    font-bold
+    text-lg
+    leading-8
+    -tracking-[.18px]
+    text-offWhite
+    bg-[#172339]
+    rounded-md
+}
+
+.secondary_btn {
+    @apply
+    py-[15px]
+    px-[32px]
+    font-bold
+    text-lg
+    leading-8
+    -tracking-[.18px]
+    border-[1px]
+    border-[#172339]
+    rounded-md
+    hover:bg-[#172339]
+    hover:text-offWhite
+}
+}
