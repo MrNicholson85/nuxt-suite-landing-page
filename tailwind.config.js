@@ -11,6 +11,13 @@ module.exports = {
       hotPink: "#CB30E3",
       hotOrange: "#FFA84E",
     },
+    extend: {
+      backgroundImage: {
+        "hero-bg-lg": "url('assets/images/image-hero-portrait@2x.webp')",
+        "hero-bg-md": "url('assets/images/image-hero-portrait.webp')",
+        "hero-bg-sm": "url('assets/images/image-hero-landscape.webp')",
+      },
+    },
   },
   plugins: [],
 };

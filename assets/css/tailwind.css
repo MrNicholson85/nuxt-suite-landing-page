@@ -18,9 +18,13 @@
 
 .headingXl {
     @apply
-    text-[72px]
-    leading-[78px]
-    -tracking-[1px]
+    md:text-[56px]
+    lg:text-[72px]
+    md:leading-[64px]
+    lg:leading-[78px]
+    md:-tracking-[.7px]
+    lg:-tracking-[1px]
+
 }
 
 .headingXl span {

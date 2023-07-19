@@ -1,5 +1,5 @@
 <template>
-  <div class="footer flex justify-between mt-[91px]">
+  <div class="footer flex justify-between mt-[91px] mb-[71px]">
     <div><img :src="Logo" /></div>
     <div class="body">Copyright - Suite</div>
     <div class="flex lg:w-[116px] justify-between">

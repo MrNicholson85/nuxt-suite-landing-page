@@ -22,7 +22,7 @@ import Footer from "~/components/Footer.vue";
     bg-cream
     h-[464px]
     left-0
-    bottom-[-400px]
+    bottom-[-500px]
     -z-20;
 }
 </style>
