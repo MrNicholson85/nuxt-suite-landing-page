@@ -22,7 +22,7 @@ import jImg from "~~/assets/images/image-jeremy-large.webp";
 import curved_2 from "~~/assets/images/pattern-curved-line-2.svg";
 </script>
 
-<style scoped>
+<style>
 .work {
   @apply flex
     justify-center
@@ -33,6 +33,6 @@ import curved_2 from "~~/assets/images/pattern-curved-line-2.svg";
 
 .work::after {
   content: "";
-  @apply bg-royal rounded-md -z-10 slp-container absolute h-[545px] mt-[42px];
+  @apply bg-royal rounded-md -z-10 absolute h-[545px] mt-[42px];
 }
 </style>
