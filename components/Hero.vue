@@ -2,8 +2,9 @@
   <div class="hero">
     <div class="flex relative">
       <div class="hero_content relative">
-        <div class="headingXl md:w-[500px] lg:w-[635px] text-royal">
-          A <span>super solution</span> for your <span>business</span>.
+        <div class="headingXl relative md:w-[500px] lg:w-[635px] text-royal">
+          <img class="absolute right-[51px] -top-[68px]" :src="curvePath" />
+          A <span>super solution</span> for your <span>business.</span>
         </div>
         <div class="body w-[350px] mb-[52px] mt-[40px]">
           Our marketing and sales automations help you scale your outreach to
@@ -16,20 +17,20 @@
     <div>
       <div class="flex justify-between lg:grid lg:gap-y-[63px]">
         <div>
-          <div class="headingLg font-bold text-royal">2K+</div>
-          <div class="text-baseleading-[26px] text-[16px] text-ashyBlue tracking-[2.5px] uppercase">
+          <div class="headingLg hero_count_heading">2K+</div>
+          <div class="hero_count_type">
             Companies
           </div>
         </div>
         <div>
-          <div class="headingLg font-bold">8</div>
-          <div class="text-baseleading-[26px] tracking-[2.5px] uppercase">
+          <div class="headingLg hero_count_heading">8</div>
+          <div class="hero_count_type">
             Languages
           </div>
         </div>
         <div>
-          <div class="headingLg font-bold">1.2M</div>
-          <div class="text-baseleading-[26px] tracking-[2.5px] uppercase">
+          <div class="headingLg hero_count_heading">1.2M</div>
+          <div class="hero_count_type">
             Leads
           </div>
         </div>
@@ -38,7 +39,9 @@
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+import curvePath from '../assets/images/curvePath.svg';
+</script>
 
 <style scoped>
 .hero {
@@ -69,6 +72,11 @@
   md:bg-[url('assets/images/image-hero-portrait.webp')];
 }
 
-.hero_content {
+.hero_count_heading {
+  @apply font-bold text-royal
+}
+
+.hero_count_type {
+  @apply text-base leading-[26px] text-[16px] text-ashyBlue tracking-[2.5px] uppercase
 }
 </style>
