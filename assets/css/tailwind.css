@@ -94,9 +94,13 @@
 
 .primary_btn {
     @apply
-    py-[15px]
-    px-[32px]
+    flex
+    items-center
+    place-content-center
+    w-[256px]
+    h-[61px]
     font-bold
+    font-epilogueBold
     text-lg
     leading-8
     -tracking-[.18px]
@@ -111,8 +115,11 @@
 
 .secondary_btn {
     @apply
-    py-[15px]
-    px-[32px]
+    flex
+    place-content-center
+    items-center
+    w-[219px]
+    h-[56px]
     font-bold
     text-lg
     leading-8

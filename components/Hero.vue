@@ -1,9 +1,9 @@
 <template>
   <div class="hero">
     <div class="flex relative">
-      <div class="hero_content relative">
+      <div class=" translate-7-[10px] relative">
         <div class="headingXl relative md:w-[500px] lg:w-[635px] text-royal">
-          <img class="absolute right-[51px] -top-[68px]" :src="curvePath" />
+          <img class="absolute right-[57px] -top-[53px]" :src="curvePath" />
           A <span>super solution</span> for your <span>business.</span>
         </div>
         <div class="body w-[350px] mb-[52px] mt-[40px]">
@@ -46,7 +46,7 @@ import curvePath from '../assets/images/curvePath.svg';
 <style scoped>
 .hero {
   @apply grid
-    mt-[134px]
+    mt-[119px]
     h-[600px]
     md:h-[482px]
     grid-cols-1
@@ -66,7 +66,7 @@ import curvePath from '../assets/images/curvePath.svg';
   bg-no-repeat
   absolute
   right-0
-  -top-[112px]
+  -top-[92px]
   -z-10
   lg:bg-hero-bg-lg
   md:bg-[url('assets/images/image-hero-portrait.webp')];
