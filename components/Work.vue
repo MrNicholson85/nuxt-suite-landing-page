@@ -1,5 +1,8 @@
 <template>
   <div class="work slp-container">
+    <div >
+      <img class="absolute -z-[1] w-[496px] left-[20px] -bottom-[50px]" :src="ovalEffect"/>
+    </div>
     <div class="lg:w-[359px]"><img :src="jImg" /></div>
     <div class="ml-[35px] mr-[52px]"><img :src="curved_2" /></div>
     <div class="lg:w-[350px] grid gap-[40px]">
@@ -20,19 +23,25 @@
 <script setup>
 import jImg from "~~/assets/images/image-jeremy-large.webp";
 import curved_2 from "~~/assets/images/pattern-curved-line-2.svg";
+import ovalEffect from "~~/assets/images/oval_gradient.svg";
 </script>
 
 <style>
 .work {
-  @apply flex
+  @apply
+    relative
+    flex
     justify-center
     items-center
     text-offWhite
-    mt-[200px];
-}
-
-.work::after {
-  content: "";
-  @apply bg-royal rounded-md -z-10 absolute h-[545px] mt-[42px];
+    mt-[200px]
+    after:content-['']
+    after:bg-royal
+    after:rounded-[15px]
+    after:-z-10
+    after:absolute
+    after:h-[545px]
+    after:w-full
+    after:mt-[42px];
 }
 </style>

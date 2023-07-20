@@ -2,9 +2,20 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
+@font-face {
+    font-family: epilogueReg;
+    src: local("grotesk-med"),
+        url(../font/Epilogue-Regular.ttf)
+}
+
+@font-face {
+    font-family: epilogueBold;
+    src: local("grotesk-bold"),
+        url(../font/Epilogue-Bold.ttf)
+}
+
 @layer components {
     body {
-        font-family: 'Epilogue', sans-serif;
         @apply
         bg-[#F2F2F2]
     }
@@ -24,12 +35,13 @@
     lg:leading-[78px]
     md:-tracking-[.7px]
     lg:-tracking-[1px]
+    font-epilogueReg
 
 }
 
 .headingXl span {
     @apply
-    font-bold
+    font-epilogueBold
 }
 
 .headingLg {
@@ -37,12 +49,12 @@
     text-5xl
     leading-[56px]
     -tracking-[.5]
-    font-normal
+    font-epilogueBold
 }
 
 .headingLg span {
     @apply
-    font-bold
+    font-epilogueBold
 }
 
 .headingMd {
@@ -50,7 +62,7 @@
     text-5xl
     leading-[56px]
     -tracking-[.5]
-    font-bold
+    font-epilogueBold
 }
 
 .headingSm {
@@ -58,7 +70,7 @@
     text-base
     leading-[26px]
     -tracking-[2.5]
-    font-bold
+    font-epilogueBold
 }
 
 .quote {
@@ -71,6 +83,7 @@
     @apply
     text-lg
     leading-8
+    font-epilogueReg
 }
 
 .footer {
@@ -90,6 +103,10 @@
     text-offWhite
     bg-[#172339]
     rounded-md
+}
+
+.primary_btn:hover {
+    background: linear-gradient(149deg, rgba(160,96,255,1) 0%, rgba(203,48,227,1) 50%, rgba(255,168,78,1) 100%);
 }
 
 .secondary_btn {

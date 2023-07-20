@@ -2,7 +2,7 @@
   <div class="hero">
     <div class="flex relative">
       <div class="hero_content relative">
-        <div class="headingXl md:w-[500px] lg:w-[635px]">
+        <div class="headingXl md:w-[500px] lg:w-[635px] text-royal">
           A <span>super solution</span> for your <span>business</span>.
         </div>
         <div class="body w-[350px] mb-[52px] mt-[40px]">
@@ -16,8 +16,8 @@
     <div>
       <div class="flex justify-between lg:grid lg:gap-y-[63px]">
         <div>
-          <div class="headingLg font-bold">2+</div>
-          <div class="text-baseleading-[26px] tracking-[2.5px] uppercase">
+          <div class="headingLg font-bold text-royal">2K+</div>
+          <div class="text-baseleading-[26px] text-[16px] text-ashyBlue tracking-[2.5px] uppercase">
             Companies
           </div>
         </div>
@@ -43,7 +43,7 @@
 <style scoped>
 .hero {
   @apply grid
-    mt-[67px]
+    mt-[134px]
     h-[600px]
     md:h-[482px]
     grid-cols-1
@@ -54,12 +54,13 @@
 }
 
 .hero_graphic {
-  @apply w-[350px]
+  @apply md:w-[350px]
   lg:h-[600px]
   md:h-[482px]
-  md:w-[281px]
+  w-[281px]
   bg-cover
   lg:bg-contain
+  bg-no-repeat
   absolute
   right-0
   -top-[112px]

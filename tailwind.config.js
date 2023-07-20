@@ -17,6 +17,10 @@ module.exports = {
         "hero-bg-md": "url('assets/images/image-hero-portrait.webp')",
         "hero-bg-sm": "url('assets/images/image-hero-landscape.webp')",
       },
+      fontFamily: {
+        epilogueReg: ['epilogueReg', 'sans-serif'],
+        epilogueBold: ['epilogueBold', 'sans-serif'],
+      }
     },
   },
   plugins: [],
